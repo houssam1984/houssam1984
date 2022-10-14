@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="chatVM" type="com.houssameddinesapplication.app.modules.chat.data.viewmodel.ChatVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackclose"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearChat"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarAppbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowclose"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageClose"
+                        android:layout_height="@dimen/_18pxh"
+                        android:layout_width="@dimen/_18pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_close"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGarryWiller"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{chatVM.chatModel.txtGarryWiller}"
+                        style="@style/txtInterbold20_3" tools:text="@string/lbl_garry_willer"/>
+                    <ImageView android:id="@+id/imageEllipseFourteen"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_width="@dimen/_40pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse14}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse14"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <View android:background="@color/deep_purple_50"
+                android:id="@+id/lineRectangle3778"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_414pxh"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_deep_purple_a200_radius_tl_15_bl_15_br_15"
+                android:ellipsize="end" android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:id="@+id/btnHiLarryHowAreYouToday"
+                android:layout_height="@dimen/_45pxv"
+                android:layout_width="@dimen/_230pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_23pxh"
+                android:paddingStart="@dimen/_22pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/msg_hi_larry_how_a"
+                android:textAllCaps="false"
+                android:textColor="@color/white_A700"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14pxh"
+                android:textStyle="normal" tools:text="@string/msg_hi_larry_how_a"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowdelivered"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDelivered"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{chatVM.chatModel.txtDelivered}"
+                    style="@style/txtInterregular12_3" tools:text="@string/lbl_delivered"/>
+                <ImageView android:id="@+id/imageCheckmark"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_width="@dimen/_15pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_checkmark"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnhellogerryim"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical" style="@style/groupStyleindigo_50cornerRadius">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtHelloGerryim"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:text="@{chatVM.chatModel.txtHelloGerryim}"
+                    style="@style/txtHeeboregular15" tools:text="@string/msg_hello_gerry_i_m"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowfortynine"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnfortynine"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <ImageView android:id="@+id/imageFortyNine"
+                        android:layout_height="@dimen/_65pxh"
+                        android:layout_width="@dimen/_109pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_15pxh}"
+                        imageRes="@{@drawable/img_49}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_49"/>
+                    <ImageView android:id="@+id/imageFifty"
+                        android:layout_height="@dimen/_65pxh"
+                        android:layout_width="@dimen/_109pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_1pxh}"
+                        imageRes="@{@drawable/img_50}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_50"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageFiftyOne"
+                    android:layout_height="@dimen/_130pxh"
+                    android:layout_width="@dimen/_160pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_15pxh}"
+                    imageRes="@{@drawable/img_51}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_51"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/rectangle_bg_deep_purple_a200_radius_tl_15_bl_15_br_15"
+                android:ellipsize="end" android:fontFamily="@font/inter"
+                android:gravity="center" android:id="@+id/btnWowAwesome"
+                android:layout_height="@dimen/_45pxv"
+                android:layout_width="@dimen/_179pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_wow_awesome"
+                android:textAllCaps="false"
+                android:textColor="@color/white_A700"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_14pxh"
+                android:textStyle="normal" tools:text="@string/lbl_wow_awesome"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowdeliveredOne"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDeliveredOne"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{chatVM.chatModel.txtDeliveredOne}"
+                    style="@style/txtInterregular12_3" tools:text="@string/lbl_delivered"/>
+                <ImageView android:id="@+id/imageCheckmarkOne"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_width="@dimen/_15pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_checkmark"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+            </LinearLayout>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_101_radius_25"
+                android:ellipsize="end" android:fontFamily="@font/inter"
+                android:hint="@string/lbl_write_a_comment"
+                android:id="@+id/etFrameThirtySix"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@={chatVM.chatModel.etFrameThirtySixValue}"
+                android:textColor="@color/gray_502"
+                android:textColorHint="@color/gray_502"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_14pxh"
+                android:textStyle="bold" tools:ignore="Autofill"/>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/deep_purple_A200"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_50pxh"
+            app:srcCompat="@drawable/img_send_50X50" app:tint="@color/white_A700"/>
+    </FrameLayout>
+</layout>

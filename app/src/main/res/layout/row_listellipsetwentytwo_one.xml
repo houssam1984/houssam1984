@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipsetwentytwoOneRowModel" type="com.houssameddinesapplication.app.modules.messages.data.model.ListellipsetwentytwoOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowtime"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linearRowellipsetwentytwoOne"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <FrameLayout android:id="@+id/frameStackellipsetwentytwoOne"
+                android:layout_height="@dimen/_54pxv" android:layout_width="@dimen/_52pxh">
+                <ImageView android:id="@+id/imageEllipseTwentyTwoOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_54pxh"
+                    android:layout_width="@dimen/_52pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_27pxh}"
+                    imageRes="@{@drawable/img_ellipse22}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse22"/>
+                <View
+                    android:background="@drawable/rectangle_bg_green_a700_border_white_a700_radius_6_5"
+                    android:id="@+id/viewEllipseFiftyOne"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_13pxh" android:layout_width="@dimen/_13pxh"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnrichardalves"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRichardAlves"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listellipsetwentytwoOneRowModel.txtRichardAlves}"
+                    style="@style/txtInterbold16" tools:text="@string/lbl_richard_alves"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHeybrowhere"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{listellipsetwentytwoOneRowModel.txtHeybrowhere}"
+                    style="@style/txtInterregular16_3" tools:text="@string/msg_hey_bro_where"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtTime"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listellipsetwentytwoOneRowModel.txtTime}"
+            style="@style/txtInterregular16_3" tools:text="@string/lbl_10_00_am"/>
+    </LinearLayout>
+</layout>

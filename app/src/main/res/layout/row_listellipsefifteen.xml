@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipsefifteenRowModel" type="com.houssameddinesapplication.app.modules.stories.data.model.ListellipsefifteenRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnellipsefifteen"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <FrameLayout android:id="@+id/frameStackellipsefifteen"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_64pxv"
+            android:layout_width="@dimen/_64pxh" style="@style/groupStylecornerRadius_11">
+            <ImageView android:id="@+id/imageEllipseFifteen"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_54pxh"
+                android:layout_width="@dimen/_52pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_27pxh}"
+                imageRes="@{@drawable/img_ellipse15_54X52}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse15_54X52"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtRoy"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{listellipsefifteenRowModel.txtRoy}"
+            style="@style/txtIntermedium12" tools:text="@string/lbl_roy"/>
+    </LinearLayout>
+</layout>

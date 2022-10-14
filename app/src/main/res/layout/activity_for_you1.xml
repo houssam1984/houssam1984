@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="forYou1VM" type="com.houssameddinesapplication.app.modules.foryou1.data.viewmodel.ForYou1VM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackforyou"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameStackten"
+            android:layout_gravity="start"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageTen"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY" imageRes="@{@drawable/img_10}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_10"/>
+            <FrameLayout android:id="@+id/frameStackpexelshongson"
+                android:layout_gravity="start"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <View
+                    android:background="@drawable/rectangle_gradient_s_black_900_7f_e_gray_400_00"
+                    android:id="@+id/viewPexelshongson"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_185pxv" android:layout_width="@dimen/_414pxh"/>
+                <LinearLayout android:id="@+id/linearColumnellipsenine"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle_2">
+                    <androidx.appcompat.widget.Toolbar
+                        android:gravity="center_horizontal"
+                        android:id="@+id/toolbarAppbar"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" app:contentInsetStart="0dp">
+                        <LinearLayout android:id="@+id/linearRowclose"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/linearRowellipsenine"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content" android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/imageEllipseNine"
+                                    android:layout_height="@dimen/_50pxh"
+                                    android:layout_width="@dimen/_50pxh"
+                                    android:scaleType="centerCrop"
+                                    circular="@{true}"
+                                    imageRes="@{@drawable/img_ellipse9}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse9"/>
+                                <LinearLayout android:gravity="start"
+                                    android:id="@+id/linearColumnlanguage"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content" android:orientation="vertical">
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLanguage"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{forYou1VM.forYou1Model.txtLanguage}"
+                                    style="@style/txtIntersemibold20_1" tools:text="@string/lbl_lucas_anna"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt3516"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{forYou1VM.forYou1Model.txt3516}"
+                                    style="@style/txtInterregular14" tools:text="@string/lbl_35_16"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/imageClose"
+                                android:layout_height="@dimen/_18pxh"
+                                android:layout_width="@dimen/_18pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_close_18X18"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_close_18X18"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.Toolbar>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearColumnforyou"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <com.google.android.material.tabs.TabLayout
+                android:gravity="start"
+                android:id="@+id/tabLayoutGroup9148"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/white_A700"
+                app:tabTextColor="@color/white_A700_99" style="@style/groupStylecornerRadius_14"/>
+            <androidx.viewpager2.widget.ViewPager2
+                android:gravity="center_horizontal"
+                android:id="@+id/viewPagerTabbarview"
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_width="match_parent"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

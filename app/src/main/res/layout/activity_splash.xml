@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashVM" type="com.houssameddinesapplication.app.modules.splash.data.viewmodel.SplashVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSplash"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_A200">
+        <ImageView android:id="@+id/imageSocialmediaOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_112pxh"
+            android:layout_width="@dimen/_112pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_socialmedia1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_socialmedia1"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtBdChat"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{splashVM.splashModel.txtBdChat}"
+            style="@style/txtIntermedium40" tools:text="@string/msg_base_de_donn_es"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationVM" type="com.houssameddinesapplication.app.modules.notification.data.viewmodel.NotificationVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearNotification"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_A200">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_deep_purple_a200_radius_15"
+            android:id="@+id/btnArrowleft"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_width="@dimen/_44pxh"
+            android:paddingHorizontal="@dimen/_14pxh"
+            android:paddingVertical="@dimen/_14pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+        <ImageView android:id="@+id/imageNotificationbe"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_161pxh"
+            android:layout_width="@dimen/_146pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_notificationbe}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_notificationbe"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTurnonNotific"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{notificationVM.notificationModel.txtTurnonNotific}"
+            style="@style/txtInterbold32" tools:text="@string/msg_turn_on_notific2"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtTurnonnotificOne"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@{notificationVM.notificationModel.txtTurnonnotificOne}"
+            style="@style/txtInterregular16" tools:text="@string/msg_turn_on_notific"/>
+        <LinearLayout android:id="@+id/linearRownotifications"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtNotifications"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{notificationVM.notificationModel.txtNotifications}"
+                style="@style/txtIntermedium16" tools:text="@string/lbl_notifications"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchMaterialOnoffButton"
+                android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

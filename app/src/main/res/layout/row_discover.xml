@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="discoverRowModel" type="com.houssameddinesapplication.app.modules.discover.data.model.DiscoverRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStacknineteen"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_147pxh" style="@style/groupStylecornerRadius_6">
+        <ImageView android:id="@+id/imageNineteen"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_179pxh"
+            android:layout_width="@dimen/_147pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_15pxh}"
+            imageRes="@{@drawable/img_19}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_19"/>
+        <LinearLayout android:id="@+id/linearRowellipsefifteen"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius_7">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnellipsefifteen"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_8">
+                <ImageView android:id="@+id/imageEllipseFifteen"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse14}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse14"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAgnessMonica"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{discoverRowModel.txtAgnessMonica}"
+                style="@style/txtIntermedium10" tools:text="@string/lbl_agness_monica"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

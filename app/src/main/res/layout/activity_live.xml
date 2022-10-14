@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="liveVM" type="com.houssameddinesapplication.app.modules.live.data.viewmodel.LiveVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStack"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameStackonehundredtwentyfour"
+            android:layout_gravity="start"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageOneHundredTwentyFour"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_852pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_124}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_124"/>
+            <LinearLayout android:id="@+id/linearColumnrectangle3780"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnellipsenine"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyle_1">
+                    <androidx.appcompat.widget.Toolbar
+                        android:gravity="center_horizontal"
+                        android:id="@+id/toolbarAppbar"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" app:contentInsetStart="0dp">
+                        <LinearLayout android:id="@+id/linearRowclose"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/linearRowellipsenine"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content" android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/imageEllipseNine"
+                                    android:layout_height="@dimen/_50pxh"
+                                    android:layout_width="@dimen/_50pxh"
+                                    android:scaleType="centerCrop"
+                                    circular="@{true}"
+                                    imageRes="@{@drawable/img_ellipse9}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse9"/>
+                                <LinearLayout android:gravity="start"
+                                    android:id="@+id/linearColumnlanguage"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content" android:orientation="vertical">
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLanguage"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{liveVM.liveModel.txtLanguage}"
+                                    style="@style/txtIntersemibold20_1" tools:text="@string/lbl_lucas_anna"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txt3516"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{liveVM.liveModel.txt3516}"
+                                    style="@style/txtInterregular14" tools:text="@string/lbl_35_16"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/imageClose"
+                                android:layout_height="@dimen/_18pxh"
+                                android:layout_width="@dimen/_18pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_close_18X18"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_close_18X18"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.Toolbar>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearLive"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumngroup9142"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyle_2">
+                        <LinearLayout
+                            android:id="@+id/linearRowgroup9142"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearColumnellipsenineOne"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content" android:orientation="vertical">
+                                <LinearLayout android:gravity="start"
+                                    android:id="@+id/linearRowellipsenineOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="horizontal" style="@style/groupStyleblack_900_87cornerRadius">
+                                    <ImageView
+                                    android:id="@+id/imageEllipseNineOne"
+                                    android:layout_height="@dimen/_45pxh"
+                                    android:layout_width="@dimen/_45pxh"
+                                    android:scaleType="centerCrop"
+                                    circular="@{true}"
+                                    imageRes="@{@drawable/img_ellipse9_45X45}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse9_45X45"/>
+                                    <TextView
+                                    android:id="@+id/txtErlikheSweetC"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:text="@{liveVM.liveModel.txtErlikheSweetC}"
+                                    style="@style/txtHeeboregular18" tools:text="@string/msg_erlikhe_sweet_c"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="start"
+                                    android:id="@+id/linearRowellipseeight"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="horizontal" style="@style/groupStyleblack_900_87cornerRadius">
+                                    <ImageView
+                                    android:id="@+id/imageEllipseEight"
+                                    android:layout_height="@dimen/_45pxh"
+                                    android:layout_width="@dimen/_45pxh"
+                                    android:scaleType="centerCrop"
+                                    circular="@{true}"
+                                    imageRes="@{@drawable/img_ellipse8_45X45}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse8_45X45"/>
+                                    <TextView
+                                    android:id="@+id/txtDongKhuwanSo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:text="@{liveVM.liveModel.txtDongKhuwanSo}"
+                                    style="@style/txtInterregular18_1" tools:text="@string/msg_dong_khuwan_so"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/imageGroup9142"
+                                android:layout_height="@dimen/_180pxh"
+                                android:layout_width="@dimen/_98pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_group9142"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_group9142"/>
+                        </LinearLayout>
+                        <EditText
+                            android:background="@drawable/rectangle_bg_white_a700_70_radius_25"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:hint="@string/lbl_write_a_comment"
+                            android:id="@+id/etFrameThirtySix"
+                            android:inputType="text"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:paddingBottom="@dimen/_18pxv"
+                            android:paddingEnd="@dimen/_30pxh"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_17pxv"
+                            android:singleLine="true"
+                            android:text="@={liveVM.liveModel.etFrameThirtySixValue}"
+                            android:textColor="@color/white_A700"
+                            android:textColorHint="@color/white_A700"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/_14pxh"
+                            android:textStyle="bold" tools:ignore="Autofill"/>
+                    </LinearLayout>
+                    <View android:background="@color/white_A700_3f"
+                        android:id="@+id/lineRectangle3780"
+                        android:layout_height="@dimen/_2pxv" android:layout_width="@dimen/_344pxh"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/deep_purple_A200"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_50pxh"
+            app:srcCompat="@drawable/img_send_50X50" app:tint="@color/white_A700"/>
+    </FrameLayout>
+</layout>

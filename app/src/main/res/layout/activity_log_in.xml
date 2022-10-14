@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="logInVM" type="com.houssameddinesapplication.app.modules.login.data.viewmodel.LogInVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearLogIn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_A200">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_deep_purple_a200_radius_15"
+            android:id="@+id/btnArrowleft"
+            android:layout_height="@dimen/_44pxh"
+            android:layout_width="@dimen/_44pxh"
+            android:paddingHorizontal="@dimen/_14pxh"
+            android:paddingVertical="@dimen/_14pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnwelcometosoci"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWelcometoSoci"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{logInVM.logInModel.txtWelcometoSoci}"
+                style="@style/txtInterbold32" tools:text="@string/msg_welcome_to_soci2"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLoginyouracco"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{logInVM.logInModel.txtLoginyouracco}"
+                style="@style/txtInterregular16" tools:text="@string/msg_login_your_acco"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnlogIn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnframethirty"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius_2">
+                    <EditText
+                        android:background="@drawable/rectangle_bg_deep_purple_a100_radius_25"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter"
+                        android:hint="@string/lbl_email_id"
+                        android:id="@+id/etFrameThirty"
+                        android:inputType="text"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:paddingBottom="@dimen/_16pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_16pxh"
+                        android:paddingTop="@dimen/_17pxv"
+                        android:singleLine="true"
+                        android:text="@={logInVM.logInModel.etFrameThirtyValue}"
+                        android:textColor="@color/white_A700"
+                        android:textColorHint="@color/white_A700"
+                        android:textFontWeight="500"
+                        android:textSize="@dimen/_16pxh"
+                        android:textStyle="bold" tools:ignore="Autofill"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnframethirtyone"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                        <EditText
+                            android:background="@drawable/rectangle_bg_deep_purple_a100_radius_25"
+                            android:drawableEnd="@drawable/img_eye"
+                            android:drawablePadding="@dimen/_30pxh"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter"
+                            android:hint="@string/lbl_password"
+                            android:id="@+id/etFrameThirtyOne"
+                            android:inputType="text"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:paddingBottom="@dimen/_16pxv"
+                            android:paddingEnd="@dimen/_17pxh"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_17pxv"
+                            android:singleLine="true"
+                            android:text="@={logInVM.logInModel.etFrameThirtyOneValue}"
+                            android:textColor="@color/white_A700"
+                            android:textColorHint="@color/white_A700"
+                            android:textFontWeight="500"
+                            android:textSize="@dimen/_16pxh"
+                            android:textStyle="bold" tools:ignore="Autofill"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtForgotPassword"
+                        android:layout_gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{logInVM.logInModel.txtForgotPassword}"
+                        style="@style/txtInterregular16" tools:text="@string/msg_forgot_password"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/rectangle_bg_white_a700_radius_25"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center" android:id="@+id/btnLogIn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_log_in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/deep_purple_A200"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_18pxh"
+                    android:textStyle="bold" tools:text="@string/lbl_log_in"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
