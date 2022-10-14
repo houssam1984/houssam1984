@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationsRowModel" type="com.houssameddinesapplication.app.modules.notifications.data.model.NotificationsRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipsetwentytwo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageEllipseTwentyTwo"
+            android:layout_height="@dimen/_54pxh"
+            android:layout_width="@dimen/_52pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_27pxh}"
+            imageRes="@{@drawable/img_ellipse22}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse22"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnkevinhasfollo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtKevinhasfollo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{notificationsRowModel.txtKevinhasfollo}"
+                style="@style/txtInterbold16" tools:text="@string/msg_kevin_has_follo"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDuration"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{notificationsRowModel.txtDuration}"
+                style="@style/txtInterregular16_3" tools:text="@string/lbl_1_hour_ago"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

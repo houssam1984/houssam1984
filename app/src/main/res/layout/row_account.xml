@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="accountRowModel" type="com.houssameddinesapplication.app.modules.account.data.model.AccountRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnellipsetwentyone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_1">
+        <LinearLayout android:id="@+id/linearRowgroup8916One"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearRowellipsetwentyone"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageEllipseTwentyOne"
+                    android:layout_height="@dimen/_50pxh"
+                    android:layout_width="@dimen/_50pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse21}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse21"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnrizalreynaldhi"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtRizalReynaldhi"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{accountRowModel.txtRizalReynaldhi}"
+                        style="@style/txtIntermedium18" tools:text="@string/lbl_rizal_reynaldhi"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDuration"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{accountRowModel.txtDuration}"
+                        style="@style/txtIntermedium10_1" tools:text="@string/lbl_35_minutes_ago"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageGroup8916One"
+                android:layout_height="@dimen/_6pxh"
+                android:layout_width="@dimen/_30pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group8916"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group8916"/>
+        </LinearLayout>
+        <TextView android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@{accountRowModel.txtLanguage}"
+            style="@style/txtInterregular16" tools:text="@string/msg_most_people_nev"/>
+        <LinearLayout android:id="@+id/linearRowlightbulb1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearRowlightbulb2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageLightbulb"
+                    android:layout_height="@dimen/_17pxh"
+                    android:layout_width="@dimen/_19pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_lightbulb"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_lightbulb"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtZipcodeTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{accountRowModel.txtZipcodeTwo}"
+                    style="@style/txtInterregular12" tools:text="@string/lbl_2200"/>
+                <ImageView android:id="@+id/imageUser"
+                    android:layout_height="@dimen/_18pxh"
+                    android:layout_width="@dimen/_19pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_user_18X19"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_user_18X19"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtEightHundred"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{accountRowModel.txtEightHundred}"
+                    style="@style/txtInterregular12" tools:text="@string/lbl_800"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/frameStackellipsethirty"
+                android:layout_height="@dimen/_25pxv" android:layout_width="@dimen/_54pxh">
+                <ImageView android:id="@+id/imageEllipseThirty"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_width="@dimen/_25pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse30}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse30"/>
+                <ImageView android:id="@+id/imageEllipseThirtyOne"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_width="@dimen/_25pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse31}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse31"/>
+                <ImageView android:id="@+id/imageEllipseThirtyTwo"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_width="@dimen/_25pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_ellipse32}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse32"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
